@@ -194,7 +194,9 @@ It does not provide professional legal advice.
 git add .
 git commit -m "feat: build Judicia AI with custom LEGAL_TINYLAMA model"
 git push origin main
-👩‍💻 Author
+
+
+## 👩‍💻 Author
 
 HRIDIKA KP &
 MOHAMMED SHAMIL PK
