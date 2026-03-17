@@ -20,7 +20,12 @@ app.add_middleware(
 )
 
 # Ensure DB tables exist
-init_db(engine)
+try:
+    init_db(engine)
+except Exception as e:
+    print(f"⚠️ Warning: Could not initialize database: {e}")
+    print("   Database features will be disabled. To enable, ensure MySQL is running.")
+    print("   See .env for database configuration.")
 
 
 @app.post("/chat", response_model=ChatResponse)
